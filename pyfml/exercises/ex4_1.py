@@ -60,12 +60,14 @@ def solve(ip):
 
     Khi s = '1', s.zfill(5) sẽ thêm đủ "zero" để tạo thành '00001'
     '''
-    result = None
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    test = 'cái này để test github'
+    ip1 = ip.split('.')
+    Output = ''
+    for i in ip1:
+        a = bin(int(i)).replace('0b','')
+        Output = Output + '.' + a.zfill(8)
+    result = Output.strip('.')
     return result
-
 
 def main():
     '''
@@ -85,7 +87,7 @@ def main():
       Trên Python2, function tương ứng tên là `raw_input`
     '''
 
-    ip = input('Nhập vào IP:')
+    ip = input('Nhap vao IP:')
     print(solve(ip))
 
 
