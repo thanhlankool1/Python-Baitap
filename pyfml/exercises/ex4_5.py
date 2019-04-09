@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 
-
+from functools import reduce
 def solve(numbers):
     '''Tính tổng và tích của dãy số `numbers`
 
     Return một tuple (sum, product)
     Không sử dụng hàm `sum`
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
-    return result
+    result = []
+    sum = reduce(lambda x1, x2: x1+ x2 , numbers)
+    product = reduce(lambda x1, x2: x1*x2, numbers)
+    result.append((sum,product))
+    return tuple(result[0])
 
 
 def main():

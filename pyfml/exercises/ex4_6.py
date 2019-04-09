@@ -9,12 +9,10 @@ def solve(text):
 
     NOTE: không dùng `re` library
     '''
-
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    result = []
+    for i in text:
+        if i.isdigit():
+            result.append(int(i))
     return result
 
 

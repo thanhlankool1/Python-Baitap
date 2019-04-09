@@ -13,18 +13,21 @@ def solve(words):
       import string
       print(string.ascii_lowercase)
     '''
-
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    Li = []
+    Tong = 0
+    for word in words:
+        word = word.lower()
+        for char in word:
+            gt = ord(char) - 96
+            Tong += gt
+        Li.append(Tong)
+        Tong = 0
+        result = Li
     return result
-
 
 def main():
     words = ['numpy', 'django', 'saltstack', 'discipline',
-             'Python', 'FAMILUG', 'pymi']
+             'Python', 'FAMILUG', 'pymi',]
 
     print(solve(words))
 

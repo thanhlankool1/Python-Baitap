@@ -16,13 +16,21 @@ def solve(year):
 
     Năm 2017 là năm "Đinh Dậu".
     '''
-
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    ThienCan = ['canh','tân' ,'nhâm' , 'quý','giáp','ất', 'bính','đinh','mậu','kỷ']
+    DiaChi = ['tý','sửu','dần', 'mão', 'thìn', 'tỵ' ,'ngọ' ,'mùi','thân','dậu','tuất','hợi']
+    result = []
+    y = ((2019 - year) % 12)
+    print(y)
+    year = str(year)
+    s = year[len(year)-1]
+    print(s)
+    
+    if y != 0:
+        return result.append([int(year), ThienCan[int(s)],'',DiaChi[(11 - int(y))]])        
+    else:
+        return result.append([int(year), ThienCan[int(s)],DiaChi[11]])
     return result
+
 
 
 def main():

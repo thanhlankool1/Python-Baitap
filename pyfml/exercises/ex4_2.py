@@ -38,11 +38,11 @@ def solve(octal):
     Out[1]: '0o111'
     '''
 
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    s = oct(octal).strip('0o')
+    if int(s) <= 777:
+        s1 = (777 - int(s))
+    else: s1 = (int(s) - 777)
+    result = '0o'+str(s1)
     return result
 
 
