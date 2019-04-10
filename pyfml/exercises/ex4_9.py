@@ -6,11 +6,11 @@ def solve(numbers):
     Không sử dụng function `max`, `sorted`
     '''
     assert isinstance(numbers, list)
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    a = numbers[0]
+    for i in numbers:
+        if a <= i:
+            a = i
+            result = a
     return result
 
 
