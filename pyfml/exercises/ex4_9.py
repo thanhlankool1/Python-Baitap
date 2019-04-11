@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-
+from functools import reduce
 
 def solve(numbers):
     '''Tìm phần tử lớn nhất của list số nguyên `numbers`
     Không sử dụng function `max`, `sorted`
     '''
     assert isinstance(numbers, list)
-    a = numbers[0]
-    for i in numbers:
-        if a <= i:
-            a = i
-            result = a
+    result = reduce(lambda x,y: x if x > y else y , numbers)
     return result
 
 

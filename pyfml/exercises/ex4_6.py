@@ -10,10 +10,16 @@ def solve(text):
     NOTE: không dùng `re` library
     '''
     result = []
-    for i in text:
-        if i.isdigit():
-            result.append(int(i))
+    text1 = text.split()
+    text2 = []
+    for i in text1:
+        for j in range(len(i)):
+            if i[j].isdigit() is False:
+                i = i.replace(i[j], ' ')
+        text2.append(i)
+    result = [int(i) for i in (''.join(text2).split())]
     return result
+
 
 
 def main():

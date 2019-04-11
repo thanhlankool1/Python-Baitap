@@ -12,11 +12,8 @@ def solve(N):
     Must: use list comprehension
     Tips: list comprehension always create new list
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    import random
+    result = [ random.randrange(0,10) for i in range(N) ]
     return result
 
 

@@ -16,20 +16,20 @@ def solve(year):
 
     Năm 2017 là năm "Đinh Dậu".
     '''
-    ThienCan = ['canh','tân' ,'nhâm' , 'quý','giáp','ất', 'bính','đinh','mậu','kỷ']
-    DiaChi = ['tý','sửu','dần', 'mão', 'thìn', 'tỵ' ,'ngọ' ,'mùi','thân','dậu','tuất','hợi']
+    ThienCan = ['giáp', 'ất', 'bính', 'đinh', 'mậu', 'kỷ', 'canh', 'tân', 'nhâm', 'quý']
+    DiaChi = ['tý', 'sửu', 'dần', 'mão', 'thìn', 'tị', 'ngọ', 'mui', 'thân', 'dậu',
+       'tuất', 'hợi']
     result = []
     y = ((2019 - year) % 12)
-    print(y)
-    year = str(year)
-    s = year[len(year)-1]
-    print(s)
-    
+    s = year % 10
+
     if y != 0:
-        return result.append([int(year), ThienCan[int(s)],'',DiaChi[(11 - int(y))]])        
+        result.append(year)
+        result.append((ThienCan[s - 4] + ' ' +DiaChi[(11 - y)]).title())        
     else:
-        return result.append([int(year), ThienCan[int(s)],DiaChi[11]])
-    return result
+        result.append(year)
+        result.append((ThienCan[s - 4] + ' ' + DiaChi[11]).title())
+    return tuple(result)
 
 
 
