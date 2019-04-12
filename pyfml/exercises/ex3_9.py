@@ -19,11 +19,17 @@ def solve():
 
     Lưu ý: kết quả từng list con trả về với a giảm dần, b và c tăng dần
     '''
-    result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    # raise NotImplementedError("Học viên chưa làm bài này")
+    s = []
+    data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    for a in data[::-1]:
+        for b in data:
+            for c in data:
+                if a + b / c == 10:
+                    s.append([a, b, c])
+    result = s
     return result
 
 

@@ -19,11 +19,9 @@ def solve(input_data):
     :param input_data: tên file bất kì
     :rtype: str
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    lenght = len(input_data)
+    s = input_data[:lenght - (lenght - input_data.rfind('.'))]
+    result = input_data = s
     return result
 
 

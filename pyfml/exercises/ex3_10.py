@@ -18,8 +18,11 @@ def solve(list1, list2):
     result = []
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    # raise NotImplementedError("Học viên chưa làm bài này")
+    result = []
+    for i in range(0, len(list1)):
+        if list1[i] in list2:
+            result.append(list1[i])
     return result
 
 

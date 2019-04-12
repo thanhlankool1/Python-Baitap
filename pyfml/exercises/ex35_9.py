@@ -12,8 +12,10 @@ def diff_attributes(object1, object2):
 
     Tìm list các "magic" attribute mà chỉ object1 có, object2 không có
     '''
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+    Obj1Att = [x for x in dir(object1) if x[:2] == "__" and x[-2:] == "__"]
+    Obj2Att = [x for x in dir(object2) if x[:2] == "__" and x[-2:] == "__"]
+    result = [x for x in Obj1Att if x not in Obj2Att]
+    return result
 
 
 def solve(input_data):

@@ -9,11 +9,8 @@ def solve(N):
     Must: use list comprehension
     Tips: list comprehension always create new list
     '''
-    result = 0
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    # result = sum([ x for x in range('2**1000'.isdigit()) ])
+    result = sum([int(x) for x in str(2 ** 1000)])
     return result
 
 

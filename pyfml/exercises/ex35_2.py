@@ -13,7 +13,8 @@ def solve(N):
     Tips: list comprehension always create new list
     '''
     import random
-    result = [ random.randrange(0,10) for i in range(N) ]
+    result = [random.randrange(0, 10) for i in range(N)]
+
     return result
 
 

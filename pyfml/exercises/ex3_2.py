@@ -21,11 +21,14 @@ def solve(input_data):
     '''Trả về tiêu đề bài thơ ghép từ các chữ cái đầu tiên của mỗi dòng.
     Chỉ viết hoa chữ cái đầu tiên.
     '''
-    result = None
 
-    # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
+    S = input_data
+    S1 = ''
+    for i in S:
+        if ord(i) > 60 and ord(i) < 91:
+            S1 = S1 + i
 
+    result = S1.title()
     return result
 
 

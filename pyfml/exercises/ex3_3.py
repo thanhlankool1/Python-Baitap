@@ -14,11 +14,21 @@ def solve():
 
     :rtype: list
     '''
-    result = None
 
-    # Xóa dòng sau và viết code vào đây set các gía trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    S = []
+    for i in list(range(1, 101)):
+        if i % 3 == 0 and i % 5 == 0:
+            i = 'FizzBuzz'
+            S.append(i)
+        elif i % 3 == 0:
+            i = 'Fizz'
+            S.append(i)
+        elif i % 5 == 0:
+            i = 'Buzz'
+            S.append(i)
+        else:
+            S.append(i)
+    result = S
     return result
 
 

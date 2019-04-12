@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 from functools import reduce
+
+
 def solve(numbers):
     '''Tính tổng và tích của dãy số `numbers`
 
@@ -8,9 +10,9 @@ def solve(numbers):
     Không sử dụng hàm `sum`
     '''
     result = []
-    sum = reduce(lambda x1, x2: x1+ x2 , numbers)
-    product = reduce(lambda x1, x2: x1*x2, numbers)
-    result.append((sum,product))
+    sum = reduce(lambda x1, x2: x1 + x2, numbers)
+    product = reduce(lambda x1, x2: x1 * x2, numbers)
+    result.append((sum, product))
     return tuple(result[0])
 
 

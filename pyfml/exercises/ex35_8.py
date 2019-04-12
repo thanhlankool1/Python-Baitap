@@ -30,10 +30,15 @@ def solve(N):
       9********9
     '''
 
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+    matrix = [list(range(10)) for x in range(10)]
+    for idx_row, val_row in enumerate(matrix):
+        for idx, _ in enumerate(val_row):
+            if idx == idx_row or idx == N - idx_row - 1:
+                val_row[idx] = str(idx_row)
+            else:
+                val_row[idx] = '*'
+    result = '\n'.join(''.join(i) for i in matrix)
+    return result
 
     return result
 

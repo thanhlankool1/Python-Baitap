@@ -20,8 +20,12 @@ def solve():
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    # raise NotImplementedError("Học viên chưa làm bài này")
+    s = []
+    for i in range(100):
+        if i != 0 and i % 5 == 0:
+            s.append(str(str(i) + ' == ' + str(int(i / 5)) + ' * 5'))
+    result = s
     return result
 
 

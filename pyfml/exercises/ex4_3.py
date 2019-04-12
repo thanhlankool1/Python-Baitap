@@ -25,9 +25,10 @@ def solve(words):
         result = Li
     return result
 
+
 def main():
     words = ['numpy', 'django', 'saltstack', 'discipline',
-             'Python', 'FAMILUG', 'pymi',]
+             'Python', 'FAMILUG', 'pymi']
 
     print(solve(words))
 

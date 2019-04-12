@@ -15,17 +15,19 @@ def solve(input_data):
 
     :rtype: list
     '''
-    result = None
+    # result = None
+    s = []
+    for index, value in enumerate(input_data, 1):
+        s.append([index, value])
 
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    result = s
     return result
 
 
 def main():
     # xử lí in ra theo yêu cầu đề bài bên dưới
-    # result = solve(data)
+    result = solve(data)
+    print(result)
     pass
 
 

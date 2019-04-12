@@ -21,7 +21,6 @@ def solve(text):
     return result
 
 
-
 def main():
     ss = 'Bé lên 3 bé đi lớp 4'
     print(solve(ss))

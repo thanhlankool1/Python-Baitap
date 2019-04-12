@@ -23,10 +23,11 @@ def solve(input_data):
     Hàm có sẵn tạo ra integer từ string: 69 == int('69')
     '''
 
-    result = None
+    # result = None
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    # raise NotImplementedError("Học viên chưa làm bài này")
+    s = bin(input_data)
+    result = int(s[s.rfind('1'):len(s)])
     return result
 
 

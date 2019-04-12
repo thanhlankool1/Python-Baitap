@@ -11,12 +11,13 @@ def solve(input_data):
 
     :rtype: bool
     '''
-    result = None
 
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
-    return result
+    s = list(input_data.lower().strip().replace(' ', ''))
+    if s == s[::-1] and len(s) > 2:
+        return True
+    else:
+        return False
+    return
 
 
 def main():

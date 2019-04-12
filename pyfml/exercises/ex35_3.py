@@ -6,11 +6,7 @@ def solve(N):
     Must: use list comprehension
     Tips: list comprehension always create new list
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    result = [x for x in range(2 * (N + 1)) if x % 2 == 0 and x != 0]
     return result
 
 

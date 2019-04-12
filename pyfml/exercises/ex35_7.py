@@ -11,11 +11,7 @@ def solve(N):
     Must: use list comprehension
     Tips: list comprehension always create new list
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    result = sum([x for x in range(N) if x % 3 == 0 or x % 5 == 0])
     return result
 
 
