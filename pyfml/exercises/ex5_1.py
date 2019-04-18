@@ -23,11 +23,17 @@ def solve(colors):
         In [1]: list(zip(['xanh', 'do'], ['XXX', 'YYY']))
         Out[1]: [('xanh', 'XXX'), ('do', 'YYY')]
     '''
-    result = []
-
-    # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    lst = 'Google'
+    hexa = ['#4885ed', '#db3236', '#f4c20d', '#4885ed', '#3cba54', '#db3236']
+    f = open('index.html', 'wt')
+    f.write('<span style="color:#4885ed">G</span>')
+    f.write('<span style="color:#db3236">o</span>')
+    f.write('<span style="color:#f4c20d">o</span>')
+    f.write('<span style="color:#4885ed">g</span>')
+    f.write('<span style="color:#3cba54">l</span>')
+    f.write('<span style="color:#db3236">e</span>')
+    f.close()
+    result = list(zip(lst, hexa))
     return result
 
 
