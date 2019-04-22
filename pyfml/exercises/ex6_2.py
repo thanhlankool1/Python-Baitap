@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 
 
-def your_function(iterable, N):
+def create_tuple_N(iterable, N):
     # Sửa tên, set giá trị return
-    pass
+    result = []
+    for i in range(len(iterable)//N):
+        result.append(tuple(iterable[(N*i):((i+1)*N)]))
+    return result
+
 
 
 def solve(iterable, N):
     ''' Chia input_data thành các tuple chứa N phần tử (chunk a list).
     Nếu tuple cuối không đủ phần tử thì bỏ đi.
     '''
-    result = None
-
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
 
     # sửa thành tên function phù hợp
-    result = your_function(iterable, N)
+    result = create_tuple_N(iterable, N)
 
     return result
 

@@ -8,14 +8,19 @@ def calculate_cost(usage, prices):
     với giá tiền cho bởi đề bài, số điện tiêu thụ `usage`
     '''
     # Viết code tính toán vào đây
-    pass
-
+    # for i in idata['usages']:
+    if int(usage) < 50:
+        result = int(usage) * prices['first_50']
+    elif int(usage) >50 and int(usage) < 100:
+        result = (50 * prices['first_50']) + (int(usage) - 50) * prices['from_51_to_100']
+    else :
+        result = (50 * prices['first_50']) +(
+            (50 * prices['from_51_to_100']) +(int(usage) - 100) *prices['above_100'])
+    return result
 
 def solve(input_data):
-    result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
 
     # Bài này làm mẫu, gọi function học viên định nghĩa với input để
     # tính kết quả.
