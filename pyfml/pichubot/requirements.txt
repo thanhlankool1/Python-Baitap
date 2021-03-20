@@ -12,7 +12,7 @@ dnspython==1.15.0
 dnspython3==1.15.0
 errbot==5.2.0
 idna==2.8
-Jinja2==2.10
+Jinja2==2.11.3
 Markdown==3.0.1
 MarkupSafe==1.1.1
 pycparser==2.19
